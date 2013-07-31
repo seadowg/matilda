@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.files = `git ls-files`.split("\n")
 
-  s.add_dependency 'ruby-function'
+  s.add_dependency 'matilda-function'
   s.add_dependency 'ruby-maybe'
   s.add_dependency 'ruby-stream'
 end
