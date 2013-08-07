@@ -3,7 +3,7 @@ $:.unshift lib unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name = "matilda"
-  s.version = "0.0.3"
+  s.version = "0.0.4"
   s.platform = Gem::Platform::RUBY
   s.authors = ["Callum Stott"]
   s.email = ["callum@seadowg.com"]
@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'matilda-function'
   s.add_dependency 'matilda-maybe'
-  s.add_dependency 'ruby-stream'
+  s.add_dependency 'matilda-stream'
 end
