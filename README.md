@@ -24,8 +24,8 @@ are:
   Stream implementation.
 * [matilda-maybe](http://github.com/seadowg/matilda-maybe) - A Maybe
   monad for use with possibly undefined values.
-* [matilda-function](http://github.com/seadowg/matilda-function)
-  - Enhancements to Ruby's Proc to allow for composition and infinite recursion.
+* [matilda-function](http://github.com/seadowg/matilda-function) - Enhancements to
+  Ruby's Proc to allow for composition and infinite recursion.
 
 Here's an example of a program that reverse sorts numbers the user inputs
 written using some of matilda's features:
