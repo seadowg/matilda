@@ -16,8 +16,19 @@ Or, install for your system:
 
 ## Usage
 
+This gem is intended to provide a suite of features for allowing you to
+code in Ruby in a more functional manner. The gems currently included
+are:
+
+* [matilda-stream](http://github.com/seadowg/matilda-stream) - A lazy
+  Stream implementation.
+* [matilda-maybe](http://github.com/seadowg/matilda-maybe) - A Maybe
+  monad for use with possibly undefined values.
+* [matilda-function](http://github.com/seadowg/matilda-function)
+  - Enhancements to Ruby's Proc to allow for composition and infinite recursion.
+
 Here's an example of a program that reverse sorts numbers the user inputs
-written using matilda:
+written using some of matilda's features:
 
 ```ruby
 require 'matilda-stream'
@@ -51,7 +62,7 @@ input_stream = Stream.continually(&SafeIO::READ_LINE)
 input_stream.each(&present)
 ```
 
-So this:
+So, basically, it does this:
 
     > 5,2,79,23,4
     [79, 23, 5, 4, 2]
